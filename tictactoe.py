@@ -16,3 +16,9 @@ def tictactoe():
         game_result = check_winner(game)
     print(game_result)
 
+def humans_move(game_board):
+    """
+    Displays the game board to the user, then
+    gets the human player's move and executes it.
+    """
+    pass
