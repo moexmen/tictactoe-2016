@@ -16,3 +16,7 @@ def tictactoe():
         game_result = check_winner(game)
     print(game_result)
 
+def computers_move(game_board):
+    """Executes the computers player's move if empty cell exists"""
+    pass
+
