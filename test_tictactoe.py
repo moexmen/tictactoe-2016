@@ -1,5 +1,7 @@
 import unittest
+from unittest.mock import patch
 
+import tictactoe
 from tictactoe import *
 
 class TestGameSetup(unittest.TestCase):
@@ -11,7 +13,13 @@ class TestGameSetup(unittest.TestCase):
 
 class TestGamePlay(unittest.TestCase):
     def test_humans_move(self):
-        self.fail("not implemented")
+        game = ""
+        expected = ""
+
+        # patch the input function to always return '2'
+        with patch.object(tictactoe, "input", create=True,
+                            return_value='2'):
+            self.assertEqual(humans_move(game), expected)
 
     def test_computers_move(self):
         self.fail("not implemented")
