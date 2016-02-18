@@ -16,3 +16,7 @@ def tictactoe():
         game_result = check_winner(game)
     print(game_result)
 
+def new_game():
+    """Returns a representation of an empty game grid"""
+    pass
+
