@@ -22,21 +22,23 @@ def new_game():
 
 def humans_move(game_board):
     """
-    Gets the human player's move and executes it.
+    Gets the human player's move and updates the board.
     """
     pass
 
 def computers_move(game_board):
-    """Executes the computers player's move if empty cell exists"""
+    """Update the board with the computer player's move if an empty cell exists"""
     pass
 
 def check_winner(game_board):
     """
     Checks if there is a winner or if it is a draw.
-    Returns one of the following strings as appropriate:
-    - "Human Wins!"
-    - "Computer Wins!"
-    - "Draw"
+    Returns one of the following strings when the game ends:
+    - "Human Wins!" -- human player wins
+    - "Computer Wins!" -- computer player wins
+    - "Draw" -- the board is full and no one has won
+
+    Returns None if there is no winner and moves are stil possible
     """
     pass
 
