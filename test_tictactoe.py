@@ -21,9 +21,9 @@ class TestGamePlay(unittest.TestCase):
                             return_value='2'):
             self.assertEqual(humans_move(game), expected)
 
-     def test_humans_move_02(self):
-         game = "EEEEEEEEE"
-         expected = "EEEEEEEXE"
+    def test_humans_move_02(self):
+        game = "EEEEEEEEE"
+        expected = "EEEEEEEXE"
 
         # patch the input function to always return '7'
         with patch.object(tictactoe, "input", create=True, return_value='7'):
