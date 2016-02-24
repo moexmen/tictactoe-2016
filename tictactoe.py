@@ -42,5 +42,8 @@ def check_winner(game_board):
     """
     pass
 
-# TODO: add missing stub
-
+def get_starting_player():
+    """
+    Returns True if Human starts, False if computer starts.
+    """
+    pass
