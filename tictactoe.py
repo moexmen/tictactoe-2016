@@ -1,3 +1,5 @@
+import random
+
 def tictactoe():
     """
     Human plays a single Tic-Tac-Toe game against an AI
@@ -67,7 +69,9 @@ def check_winner(game_board):
     pass
 
 def get_starting_player():
-    """
-    Returns True if Human starts, False if computer starts.
-    """
-    pass
+    n = random.randint(0,1)
+    if n==0:
+	return True
+    else:
+	return False
+
