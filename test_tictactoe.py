@@ -29,26 +29,27 @@ class TestGamePlay(unittest.TestCase):
         with patch.object(tictactoe, "input", create=True, return_value='7'):
             self.assertEqual(humans_move(game), expected)
 
-
-
     def test_computers_move(self):
         self.assertEqual(computer_move("EOEXXEEEE"),"OOEXXEEEE")
-	
+    
     def test_computer_move_1(self): 
         self.assertEqual(computer_move("XOOEXXEXE"),"XOOOXXEXE")
 
     def test_computer_move_2(self):
         self.assertEqual(computer_move("XOOXXXOXE"),"XOOXXXOXO")
 
-    def test_check_winner(self):
-	def test_human_wins(self):
-		self.assertEqual(check_winner('XXXEOEEOO'), 'Human Wins!')	
-	def test_computer_wins(self):
-		self.assertEqual(check_winner('EEOXEOXXO'), 'Computer Wins!')
-	def test_draw(self):	
-		self.assertEqual(check_winner('XOOOXXOXX'), 'Draw')	
-	def test_none(self):	
-		self.assertEqual(check_winner('EEEEEOXEX'), None)		
+    def test_human_wins(self):
+        self.assertEqual(check_winner('XXXEOEEOO'), 'Human Wins!')  
+
+    def test_computer_wins(self):
+        self.assertEqual(check_winner('EEOXEOXXO'), 'Computer Wins!')
+
+    def test_draw(self):    
+        self.assertEqual(check_winner('XOOOXXOXX'), 'Draw') 
+
+    def test_none(self):    
+        self.assertEqual(check_winner('EEEEEOXEX'), None)       
+
 if __name__ == '__main__':
     unittest.main()
 
