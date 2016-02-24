@@ -45,7 +45,7 @@ class TestGamePlay(unittest.TestCase):
         self.assertEqual(check_winner('EEOXEOXXO'), 'Computer Wins!')
 
     def test_draw(self):    
-        self.assertEqual(check_winner('XOOOXXOXX'), 'Draw') 
+        self.assertEqual(check_winner('XOXOXOOXO'), 'Draw!')
 
     def test_none(self):    
         self.assertEqual(check_winner('EEEEEOXEX'), None)       
