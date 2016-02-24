@@ -6,7 +6,7 @@ from tictactoe import *
 
 class TestGameSetup(unittest.TestCase):
     def test_new_game(self):
-        self.fail("not implemented")
+        self.assertEqual(new_game(),"EEEEEEEEE")
 
     def test_get_starting_player(self):
         self.assertIsInstance(get_starting_player(), bool)
