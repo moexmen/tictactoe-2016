@@ -9,7 +9,7 @@ class TestGameSetup(unittest.TestCase):
         self.fail("not implemented")
 
     def test_get_starting_player(self):
-        self.assertIsInstance(get_starting_player(), bool)
+        self.assertIsInstance(get_starting_player(human), True)
 
 class TestGamePlay(unittest.TestCase):
     def test_humans_move_01(self):
