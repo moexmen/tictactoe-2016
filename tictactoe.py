@@ -47,3 +47,7 @@ def get_starting_player():
     Returns True if Human starts, False if computer starts.
     """
     pass
+
+def print_board(boardplay):
+    pretty_board = boardplay[:3] + "\n" + boardplay[4:7] + "\n" + boardplay[6:]
+    return pretty_board
