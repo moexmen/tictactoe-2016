@@ -26,13 +26,13 @@ class TestGamePlay(unittest.TestCase):
 
     def test_check_winner(self):
 	def test_human_wins(self):
-		self.assertEqual(check_winner('XXXEOEEOO'), True)	
+		self.assertEqual(check_winner('XXXEOEEOO'), 'Human Wins!')	
 	def test_computer_wins(self):
-		self.assertEqual(check_winner('EEOXEOXXO'), True)
+		self.assertEqual(check_winner('EEOXEOXXO'), 'Computer Wins!')
 	def test_draw(self):	
-		self.assertEqual(check_winner('XOOOXXOXX'), True)	
+		self.assertEqual(check_winner('XOOOXXOXX'), 'Draw')	
 	def test_none(self):	
-		self.assertEqual(check_winner('EEEEEOXEX'), True)		
+		self.assertEqual(check_winner('EEEEEOXEX'), None)		
 if __name__ == '__main__':
     unittest.main()
 
