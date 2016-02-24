@@ -40,10 +40,15 @@ def check_winner(game_board):
 
     Returns None if there is no winner and moves are stil possible
     """
-    pass
+    def check_winner(game_board):
+        
+    s=game_board	
+    if s[:3]=='XXX' or s[3:6]=='XXX' or s[6:9]=='XXX' or s[::3]=='XXX' or s[1::3]=='XXX' or s[2::3]=='XXX' or s[::4]=='XXX' or s[2:8:2]=='XXX':
+        return "Human Wins!"
+    elif s[:3]=='OOO' or s[3:6]=='OOO' or s[6:9]=='OOO' or s[::3]=='OOO' or s[1::3]=='OOO' or s[2::3]=='OOO' or s[::4]=='OOO' or s[2:8:2]=='OOO':
+        return "Computer Wins!"
+    elif s[0::]=='E' or s[1::]=='E' or s[2::]=='E' or s[3::]=='E' or s[4::]=='E' or s[5::]=='E' or s[6::]=='E' or s[7::]=='E' or s[8::]=='E':
+        return None
+    else:
+        return "Draw!"
 
-def get_starting_player():
-    """
-    Returns True if Human starts, False if computer starts.
-    """
-    pass
