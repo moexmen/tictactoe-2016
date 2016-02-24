@@ -1,3 +1,5 @@
+import random
+
 def tictactoe():
     """
     Human plays a single Tic-Tac-Toe game against an AI
@@ -72,7 +74,11 @@ def get_starting_player():
     """
     Returns True if Human starts, False if computer starts.
     """
-    pass
+    n = random.randint(0,1)
+    if n==0:
+        return True
+    else:
+        return False
 
 def print_board(boardplay):
     pretty_board = boardplay[:3] + "\n" + boardplay[3:6] + "\n" + boardplay[6:]
@@ -80,3 +86,4 @@ def print_board(boardplay):
 
 if __name__ == "__main__":
     tictactoe()
+
