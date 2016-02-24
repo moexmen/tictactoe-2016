@@ -30,13 +30,13 @@ class TestGamePlay(unittest.TestCase):
             self.assertEqual(humans_move(game), expected)
 
     def test_computers_move(self):
-        self.assertEqual(computer_move("EOEXXEEEE"),"OOEXXEEEE")
+        self.assertEqual(computers_move("EOEXXEEEE"),"OOEXXEEEE")
     
     def test_computer_move_1(self): 
-        self.assertEqual(computer_move("XOOEXXEXE"),"XOOOXXEXE")
+        self.assertEqual(computers_move("XOOEXXEXE"),"XOOOXXEXE")
 
     def test_computer_move_2(self):
-        self.assertEqual(computer_move("XOOXXXOXE"),"XOOXXXOXO")
+        self.assertEqual(computers_move("XOOXXXOXE"),"XOOXXXOXO")
 
     def test_human_wins(self):
         self.assertEqual(check_winner('XXXEOEEOO'), 'Human Wins!')  
