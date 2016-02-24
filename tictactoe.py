@@ -10,10 +10,12 @@ def tictactoe():
         if humans_turn:
             game = humans_move(game)
             humans_turn = False
+            print_board(game)
         else:
             game = computers_move(game)
+            print_board(game)
             humans_turn = True
-        game_result = check_winner(game)
+            game_result = check_winner(game)
     print(game_result)
 
 def new_game():
