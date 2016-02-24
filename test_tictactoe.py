@@ -43,5 +43,10 @@ class TestGamePlay(unittest.TestCase):
     def test_check_winner(self):
         self.fail("not implemented")
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_print_1(self):
+        game = "EEEEEEEEE"
+        self.assertEqual(print_board(game),"EEE\nEEE\nEEE")
+
+    def test_print_2(self):
+	game = "EXEEOEXEE"
+	self.assertEqual(print_board(game),"EXE\nEOE\nXEE")
