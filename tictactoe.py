@@ -71,3 +71,6 @@ def get_starting_player():
     Returns True if Human starts, False if computer starts.
     """
     pass
+
+if __name__ == "__main__":
+    tictactoe()
