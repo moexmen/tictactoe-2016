@@ -24,11 +24,15 @@ class TestGamePlay(unittest.TestCase):
     def test_computers_move(self):
         self.fail("not implemented")
 
-    def test_check_winner(self)
-	self.assertEqual(check_winner('XXXEOEEOO'), 'Human Wins!')	
-	self.assertEqual(check_winner('EEOXEOXXO'), 'Computer Wins!')
-	self.assertEqual(check_winner('XOOOXXOXX'), 'Draw')	
-	self.assertEqual(check_winner('EEEEEOXEX'), None)		
+    def test_check_winner(self):
+	def test_human_wins(self):
+		self.assertEqual(check_winner('XXXEOEEOO'), True)	
+	def test_computer_wins(self):
+		self.assertEqual(check_winner('EEOXEOXXO'), True)
+	def test_draw(self):	
+		self.assertEqual(check_winner('XOOOXXOXX'), True)	
+	def test_none(self):	
+		self.assertEqual(check_winner('EEEEEOXEX'), True)		
 if __name__ == '__main__':
     unittest.main()
 
