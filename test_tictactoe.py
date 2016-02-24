@@ -50,6 +50,13 @@ class TestGamePlay(unittest.TestCase):
     def test_none(self):    
         self.assertEqual(check_winner('EEEEEOXEX'), None)       
 
+    def test_print_1(self):
+        game = "EEEEEEEEE"
+        self.assertEqual(print_board(game),"EEE\nEEE\nEEE")
+
+    def test_print_2(self):
+        game = "EXEEOEXEE"
+        self.assertEqual(print_board(game),"EXE\nEOE\nXEE")
+
 if __name__ == '__main__':
     unittest.main()
-
