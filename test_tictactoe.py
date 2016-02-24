@@ -32,7 +32,13 @@ class TestGamePlay(unittest.TestCase):
 
 
     def test_computers_move(self):
-        self.fail("not implemented")
+        self.assertEqual(computer_move("EOEXXEEEE"),"OOEXXEEEE")
+	
+    def test_computer_move_1(self): 
+        self.assertEqual(computer_move("XOOEXXEXE"),"XOOOXXEXE")
+
+    def test_computer_move_2(self):
+        self.assertEqual(computer_move("XOOXXXOXE"),"XOOXXXOXO")
 
     def test_check_winner(self):
         self.fail("not implemented")
