@@ -10,8 +10,14 @@ the GitBook chapter on [Functional Abstractions](https://estl.gitbooks.io/moe-co
 
 1. Fork this repository.
 1. Clone it onto your machine.
+
+  `git clone <URL> <directory_name>`
 1. Checkout your own branch and make changes.
+
+  `git checkout -b <branch name>`
 1. Push to your forked copy.
+
+  `git push <remote name> <branch name>`
 1. Create a pull request on the original repository.
 1. Bask in the glow of making a contribution to open source.
 
