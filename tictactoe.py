@@ -18,7 +18,7 @@ def tictactoe():
 
 def new_game():
     """Returns a representation of an empty game grid"""
-    pass
+    return "EEEEEEEEE"
 
 def humans_move(game_board):
     """
