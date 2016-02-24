@@ -75,7 +75,7 @@ def get_starting_player():
     pass
 
 def print_board(boardplay):
-    pretty_board = boardplay[:3] + "\n" + boardplay[4:7] + "\n" + boardplay[6:]
+    pretty_board = boardplay[:3] + "\n" + boardplay[3:6] + "\n" + boardplay[6:]
     return pretty_board
 
 if __name__ == "__main__":
