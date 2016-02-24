@@ -1,6 +1,6 @@
 import random
 
-def tictactoe():
+def play_tictactoe():
     """
     Human plays a single Tic-Tac-Toe game against an AI
     """
@@ -93,5 +93,5 @@ def print_board(boardplay):
     return pretty_board
 
 if __name__ == "__main__":
-    tictactoe()
+    play_tictactoe()
 
