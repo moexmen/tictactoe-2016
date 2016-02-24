@@ -28,7 +28,16 @@ def humans_move(game_board):
 
 def computers_move(game_board):
     """Update the board with the computer player's move if an empty cell exists"""
-    pass
+    num=len(game_board)
+    for i in range(num):
+        if game_board[i]!='E':
+            pass
+        else:
+           start=game_board[0:i]
+           end=game_board[i+1:]
+           game_board = start + "O" + end
+           break
+    return(game_board)
 
 def check_winner(game_board):
     """
