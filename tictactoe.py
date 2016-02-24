@@ -24,7 +24,22 @@ def humans_move(game_board):
     """
     Gets the human player's move and updates the board.
     """
-    pass
+    valid_move = False
+    
+    while valid_move == False:
+        move = int(input("Enter a game board position (0 - 8) to make a move: "))
+        if move < 0 or move > 8:
+            print("Position out of range. Please try again.")
+        elif game_board[move] != "E":
+            print("Position not empty. Please try again.")
+        else:
+            front = game_board[:move]
+            back = game_board[move+1:]
+            front = front + "X"
+            game_board = front + back
+            valid_move = True
+
+    return game_board
 
 def computers_move(game_board):
     """Update the board with the computer player's move if an empty cell exists"""
