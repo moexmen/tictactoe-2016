@@ -73,7 +73,7 @@ def check_winner(game_board):
         return "Human Wins!"
     elif s[:3]=='OOO' or s[3:6]=='OOO' or s[6:9]=='OOO' or s[::3]=='OOO' or s[1::3]=='OOO' or s[2::3]=='OOO' or s[::4]=='OOO' or s[2:8:2]=='OOO':
         return "Computer Wins!"
-    elif s[0::]=='E' or s[1::]=='E' or s[2::]=='E' or s[3::]=='E' or s[4::]=='E' or s[5::]=='E' or s[6::]=='E' or s[7::]=='E' or s[8::]=='E':
+    elif s[0]=='E' or s[1]=='E' or s[2]=='E' or s[3]=='E' or s[4]=='E' or s[5]=='E' or s[6]=='E' or s[7]=='E' or s[8]=='E':
         return None
     else:
         return "Draw!"
